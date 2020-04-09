@@ -21,14 +21,16 @@ import remoteDebugger from '@b.taranenko/js-remote-debugger';
 // app startup
 remoteDebugger.initialize(YOUR_WORKSPACE_ID) // should be called BEFORE any remoteDebugger.log() calls
 
+remoteDebugger.setUserInfo(string) // optional
+
 // somewhere in your code
 await remoteDebugger.log(
   {
-    type: 'WARNING' // could be 'REGULAR', 'WARNING', 'INFO', 'ERROR',
-    data: 'any data you want to log',
-    label: 'Click login button' // (optional),
+    type: REGULAR | WARNING | INFO | ERROR,
+    data: any,
+    label: string // (optional),
   },
-  (event) => {} // onSuccess (optional),
-  (error) => {} // onError (optional),
+  (event) => void // onSuccess (optional),
+  (error) => void // onError (optional),
 )
 ```
