@@ -13,7 +13,7 @@ yarn add @b.taranenko/js-remote-debugger
 ## Usage
 1. Go to [Javascript Remote Debugger site](https://remote-debugger.now.sh)
 2. Add workspace name (optional)
-
+3. Inside your project:
 ```javascript
 import remoteDebugger from '@b.taranenko/js-remote-debugger';
 ```
@@ -28,7 +28,7 @@ await remoteDebugger.log(
     data: 'any data you want to log',
     label: 'Click login button' // (optional),
   },
-  (event) => null // onSuccess (optional),
-  (error) => null // onError (optional),
+  (event) => {} // onSuccess (optional),
+  (error) => {} // onError (optional),
 )
 ```
