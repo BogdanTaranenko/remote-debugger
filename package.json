@@ -1,0 +1,55 @@
+{
+  "name": "@b.taranenko/js-remote-debugger",
+  "umdName": "jsRemoteDebugger",
+  "version": "0.0.4",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "type-check": "tsc -w",
+    "build:declaration": "tsc --project ./tsconfig.declaration.json && rollup --config rollup.config.declaration.js",
+    "build": "rollup -c && npm run build:declaration"
+  },
+  "keywords": [
+    "remote-debugger",
+    "debugger",
+    "js-debugger",
+    "logger",
+    "js-logger"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BogdanTaranenko/remote-debugger.git"
+  },
+  "description": "Framework agnostic javascript remote debugger",
+  "author": "Bogdan Taranenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BogdanTaranenko/remote-debugger.git/issues"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
+  },
+  "peerDependencies": {},
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-typescript": "7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "rollup": "2.1.0",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-dts": "1.3.0",
+    "rollup-plugin-json": "^4.0.0",
+    "typescript": "^3.8.3"
+  }
+}
