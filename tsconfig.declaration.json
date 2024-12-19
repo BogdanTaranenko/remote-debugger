@@ -3,6 +3,7 @@
   "compilerOptions": {
     // Process & infer types from .js files.
     "allowJs": false,
+    "strict": false,
     // Only emit ‘.d.ts’ declaration files.
     // Allow Babel to transform files.
     "noEmit": false,
@@ -10,7 +11,7 @@
     // Generates corresponding .d.ts file.
     "declaration": true,
     // Output directory for generated declaration files.
-    "declarationDir": "build/types",             
+    "declarationDir": "build/types",
     // Allow default imports from modules with no default export.
     "allowSyntheticDefaultImports": true,
   }

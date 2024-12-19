@@ -25,7 +25,9 @@ export default {
     }
   ],
   plugins: [
-    typescript(),
+    typescript({
+      noEmitOnError: false,
+    }),
     babel({
       exclude: 'node_modules/**',
       extensions: ['.ts','.tsx']
