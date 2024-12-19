@@ -13,7 +13,8 @@ yarn add @b.taranenko/js-remote-debugger
 ## Usage
 1. Go to [Javascript Remote Debugger site](https://remote-debugger.now.sh)
 2. Add workspace name (optional)
-3. Inside your project:
+3. Generate workspace
+4. Inside your project:
 ```javascript
 import remoteDebugger from '@b.taranenko/js-remote-debugger';
 ```
